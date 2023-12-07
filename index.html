@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="main-image">
+            <div class="logo">
+                <img src="odin-lined.png" alt="logo">
+                <h1>ODIN</h1>
+            </div>
+            <div class="author">Photo by <a href="https://unsplash.com/@kikimora33">Kate Laine</a> on <a href="https://unsplash.com/">Unsplash</a></div>
+        </section>
+        <section class="content">
+            <div class="content-1">Some text you want to show the customer about why they should sign up your your serveice and products ...</div>
+            
+            <div class="content-2">                
+                <form id="signup" action="#" method="post"> 
+                    <div><h2>Fill in your information</h2></div>
+                    <div></div>
+                    <div>
+                        <label for="firstname">FISRT NAME</label>
+                        <input type="text" id="firstname" maxlength="20" minlength="1" required placeholder="E.g. John">
+                    </div>
+                    <div>
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" id="lastname" maxlength="20" minlength="1" required placeholder="E.g. Smith">
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" placeholder="E.g. Johnsith@gmail.com">
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" placeholder="E.g. 0152489635">
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" maxlength="24" minlength="8" required placeholder="Your password is between 8 an 24 charaters">
+                        <span class="error">Password between 8 an 24 charaters</span>
+                    </div>
+                    <div>
+                        <label for="confirmpassword">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirmpassword" required placeholder="Confirm your password by typing it again">
+                        <span class="error">Enterting the wrong password</span>
+                    </div>
+                </form>
+            </div>
+            <div class="content-3">
+                <button form="signup" type="submit">Create Acount</button>
+                <div>
+                    Already have an account
+                    <a href="#">Login</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
